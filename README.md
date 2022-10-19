@@ -3,7 +3,7 @@ Friendbase is a Simple Social Media application built using JavaScript, Node.js,
 
 **Link to project:** http://friendbase.com/
 
-![homepage](https://raw.githubusercontent.com/andrewquach-dev/lightning-pos/main/assets/lightningpos-dashboard-screenshot.png?token=GHSAT0AAAAAABUFDWWTYBLSDYMJD427JPKCY2QSK7Q)
+![homepage](https://raw.githubusercontent.com/andrewquach-dev/friendbase/main/assets/homepage-screenshot.png.jpg)
 
 ---
 
