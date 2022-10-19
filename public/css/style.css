@@ -1,0 +1,9 @@
+.logo {
+    margin-top: 1em;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 900;
+}
+
+.logo a {
+    text-decoration: none;
+}
