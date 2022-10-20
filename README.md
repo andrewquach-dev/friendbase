@@ -1,7 +1,7 @@
 # 👥 friendbase
 Friendbase is a Simple Social Media application built using JavaScript, Node.js, Express, Mongoose, and Bootstrap. It utilizes the MVC Architecture, MongoDB and MongoAtlas NoSQL database - with Cloudinary image hosting, and implements "local authorization" for user sign-up and login.
 
-**Link to project:** http://friendbase.com/
+**Link to project:** https://friendbase.cyclic.app/
 
 ![homepage](https://raw.githubusercontent.com/andrewquach-dev/friendbase/main/assets/homepage-screenshot.png.jpg)
 
