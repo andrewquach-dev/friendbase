@@ -1,6 +1,7 @@
 const passport = require("passport");
 const validator = require("validator");
 const User = require("../models/User");
+const tinycolor = require("tinycolor2");
 
 exports.getLogin = (req, res) => {
   if (req.user) {
@@ -50,7 +51,7 @@ exports.logout = (req, res) => {
   })
   req.session.destroy((err) => {
     if (err)
-      console.log("Error : Failed to destroy the session during logout.", err);
+      console.log("Error: Failed to destroy the session during logout.", err);
     req.user = null;
     res.redirect("/");
   });
@@ -84,10 +85,25 @@ exports.postSignup = (req, res, next) => {
     gmail_remove_dots: false,
   });
 
+  const favoriteColor = req.body.favoriteColor;
+
+  // Convert hex color to color name
+  let colorName = tinycolor(favoriteColor).toName();
+
+  // If colorName is empty, use the hex value as the color name
+  if (!colorName) {
+    colorName = favoriteColor;
+  }
+
+  // Capitalize the first letter of the color name
+  colorName = colorName.charAt(0).toUpperCase() + colorName.slice(1);
+
   const user = new User({
     userName: req.body.userName,
     email: req.body.email,
     password: req.body.password,
+    birthDate: req.body.birthDate,
+    favoriteColor: colorName,
   });
 
   User.findOne(

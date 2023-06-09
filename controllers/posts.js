@@ -23,7 +23,7 @@ module.exports = {
     try {
       const post = await Post.findById(req.params.id);
       const comments = await Comment.find({ post: req.params.id })
-        .sort({ createdAt: "desc" })
+        .sort({ createdAt: "asc" })
         .lean();
 
       res.render("post.ejs", {

@@ -1,6 +1,7 @@
 const LocalStrategy = require("passport-local").Strategy;
 const mongoose = require("mongoose");
 const User = require("../models/User");
+const { generateUserId } = require("../utils/userUtils");
 
 module.exports = function (passport) {
   passport.use(
@@ -32,7 +33,8 @@ module.exports = function (passport) {
   );
 
   passport.serializeUser((user, done) => {
-    done(null, user.id);
+    const userId = generateUserId(user.birthDate, user.favoriteColor); // Generate the user ID based on birthDate and favoriteColor
+    done(null, userId);
   });
 
   passport.deserializeUser((id, done) => {
