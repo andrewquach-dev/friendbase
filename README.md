@@ -5,19 +5,19 @@ Friendbase is a Simple Social Media application built using JavaScript, Node.js,
 
 ![homepage](https://raw.githubusercontent.com/andrewquach-dev/friendbase/main/assets/homepage-screenshot.png.jpg)
 
----
+
 
 ## Objectives
 
 This application was built to strengthen our understanding of the various libraries and elements used within. Feel free to give it a ::star:: and fork it to make it your own!
 
----
+
 
 ## Who can benefit from working on this repo?
 
 It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features. 
 
----
+
 
 ## Optimizations
 
@@ -28,25 +28,24 @@ Some possiblie features/optimizations include:
 - Ability to edit post
 - Ability to edit profile
 
----
 
 ## Packages/Dependencies used 
 
 connect-mongo, dotenv, ejs, express, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, cloudinary, multer, serve-favicon, validator
 
----
+
 
 ## Install all the dependencies or node packages used for development via Terminal
 
 `npm install` 
 
----
+
 
 # Things to add
 
 - Create a `.env` file and add the following as `key: value` 
   - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
- ---
+
  
  Have fun testing and improving it! 😎
